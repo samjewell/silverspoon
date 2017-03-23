@@ -42,8 +42,11 @@ group :development, :test do
   # Preview email in the default browser instead of sending it
   gem 'letter_opener'
 
-  # Use mysql as the database for Active Record
-  gem 'mysql2', '>= 0.3.18', '< 0.5'
+  # Use postgres
+  gem 'pg'
+
+  # Debugger
+  gem "pry-byebug"
 end
 
 group :development do
@@ -58,10 +61,6 @@ group :development do
 
   #for heroku
   gem 'heroku'
-end
-
-group :heroku do
-  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
