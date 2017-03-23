@@ -63,6 +63,9 @@ group :development do
   gem 'heroku'
 end
 
+# Pages
+gem "haml-rails", "~> 0.9"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
